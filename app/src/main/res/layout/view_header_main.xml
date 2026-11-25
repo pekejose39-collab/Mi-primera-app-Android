@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cabecera de la pantalla principal (degradado + logo + título). Reutilizada en móvil y tablet -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_header_gradient"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/screen_padding"
+    android:paddingTop="@dimen/header_padding_top"
+    android:paddingEnd="@dimen/screen_padding"
+    android:paddingBottom="@dimen/space_l">
+
+    <ImageView
+        android:layout_width="@dimen/icon_logo"
+        android:layout_height="@dimen/icon_logo"
+        android:layout_marginEnd="@dimen/space_m"
+        android:contentDescription="@string/cd_app_logo"
+        android:src="@drawable/ic_gem" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dim_zero"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text.GachaTrack.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <TextView
+            style="@style/Text.GachaTrack.Tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_tagline" />
+
+        <!-- Texto con plural: se rellena desde Java ("4 juegos incluidos") -->
+        <TextView
+            android:id="@+id/tv_games_count"
+            style="@style/Text.GachaTrack.Tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

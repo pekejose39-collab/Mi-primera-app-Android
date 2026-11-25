@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Lista de tarjetas de juegos. Se reutiliza con <include> en el layout del móvil
+    y en el de la tablet (layout-sw600dp), así no se repite el código.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Imagen de mapa de bits (PNG) en res/drawable: banner decorativo "deseo" -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_marginBottom="@dimen/space_m"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_card"
+        android:contentDescription="@string/cd_banner"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_banner_wish" />
+
+    <!-- Genshin Impact -->
+    <LinearLayout
+        android:id="@+id/card_genshin"
+        style="@style/Card.GachaTrack.Game">
+
+        <ImageView
+            style="@style/Icon.GachaTrack.Game"
+            android:backgroundTint="@color/game_genshin" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dim_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.GachaTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_name_genshin"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Text.GachaTrack.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_currency_genshin" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:contentDescription="@string/cd_open"
+            android:src="@drawable/ic_arrow_forward" />
+    </LinearLayout>
+
+    <!-- Honkai: Star Rail -->
+    <LinearLayout
+        android:id="@+id/card_hsr"
+        style="@style/Card.GachaTrack.Game">
+
+        <ImageView
+            style="@style/Icon.GachaTrack.Game"
+            android:backgroundTint="@color/game_hsr" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dim_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.GachaTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_name_hsr"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Text.GachaTrack.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_currency_hsr" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:contentDescription="@string/cd_open"
+            android:src="@drawable/ic_arrow_forward" />
+    </LinearLayout>
+
+    <!-- Wuthering Waves -->
+    <LinearLayout
+        android:id="@+id/card_wuwa"
+        style="@style/Card.GachaTrack.Game">
+
+        <ImageView
+            style="@style/Icon.GachaTrack.Game"
+            android:backgroundTint="@color/game_wuwa" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dim_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.GachaTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_name_wuwa"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Text.GachaTrack.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_currency_wuwa" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:contentDescription="@string/cd_open"
+            android:src="@drawable/ic_arrow_forward" />
+    </LinearLayout>
+
+    <!-- Zenless Zone Zero -->
+    <LinearLayout
+        android:id="@+id/card_zzz"
+        style="@style/Card.GachaTrack.Game">
+
+        <ImageView
+            style="@style/Icon.GachaTrack.Game"
+            android:backgroundTint="@color/game_zzz" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dim_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.GachaTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_name_zzz"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Text.GachaTrack.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_currency_zzz" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:contentDescription="@string/cd_open"
+            android:src="@drawable/ic_arrow_forward" />
+    </LinearLayout>
+
+</LinearLayout>

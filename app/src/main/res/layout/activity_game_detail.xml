@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    PANTALLA 2: ficha de un juego + calculadora de pity.
+    Los textos que dependen del juego (nombre, probabilidades...) se rellenan desde
+    GameDetailActivity.java leyendo los arrays de res/values/arrays.xml.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===== Cabecera con el color del juego ===== -->
+        <LinearLayout
+            android:id="@+id/header_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_gradient"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingTop="@dimen/header_padding_top"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="@dimen/space_l">
+
+            <TextView
+                android:id="@+id/tv_game_name"
+                style="@style/Text.GachaTrack.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_game_description"
+                style="@style/Text.GachaTrack.Tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_badge_5"
+                    style="@style/Badge.GachaTrack"
+                    android:background="@drawable/bg_badge_5star" />
+
+                <TextView
+                    android:id="@+id/tv_badge_4"
+                    style="@style/Badge.GachaTrack"
+                    android:background="@drawable/bg_badge_4star"
+                    android:textColor="@color/text_on_brand" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="@dimen/space_l">
+
+            <!-- ===== Probabilidades ===== -->
+            <TextView
+                style="@style/Text.GachaTrack.Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/section_rates" />
+
+            <TableLayout
+                style="@style/Card.GachaTrack"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView
+                        style="@style/Text.GachaTrack.RowLabel"
+                        android:text="@string/label_rate_5" />
+                    <TextView
+                        android:id="@+id/tv_rate_5"
+                        style="@style/Text.GachaTrack.RowValue" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Text.GachaTrack.RowLabel"
+                        android:text="@string/label_rate_4" />
+                    <TextView
+                        android:id="@+id/tv_rate_4"
+                        style="@style/Text.GachaTrack.RowValue" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Text.GachaTrack.RowLabel"
+                        android:text="@string/label_soft_pity" />
+                    <TextView
+                        android:id="@+id/tv_soft_pity"
+                        style="@style/Text.GachaTrack.RowValue" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Text.GachaTrack.RowLabel"
+                        android:text="@string/label_hard_pity" />
+                    <TextView
+                        android:id="@+id/tv_hard_pity"
+                        style="@style/Text.GachaTrack.RowValue" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Text.GachaTrack.RowLabel"
+                        android:text="@string/label_fifty" />
+                    <TextView
+                        style="@style/Text.GachaTrack.RowValue"
+                        android:text="@string/fifty_value" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Text.GachaTrack.RowLabel"
+                        android:text="@string/label_cost" />
+                    <TextView
+                        android:id="@+id/tv_cost"
+                        style="@style/Text.GachaTrack.RowValue" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- ===== Calculadora de pity ===== -->
+            <TextView
+                style="@style/Text.GachaTrack.Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="@string/section_calculator" />
+
+            <LinearLayout
+                style="@style/Card.GachaTrack"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_pity"
+                    style="@style/Input.GachaTrack"
+                    android:autofillHints=""
+                    android:drawableStart="@drawable/ic_star_small"
+                    android:drawablePadding="@dimen/space_s"
+                    android:hint="@string/hint_current_pity"
+                    android:maxLength="@integer/max_len_pity" />
+
+                <EditText
+                    android:id="@+id/et_currency"
+                    style="@style/Input.GachaTrack"
+                    android:autofillHints=""
+                    android:drawableStart="@drawable/ic_gem"
+                    android:drawablePadding="@dimen/space_s"
+                    android:hint="@string/hint_currency"
+                    android:maxLength="@integer/max_len_currency" />
+
+                <CheckBox
+                    android:id="@+id/cb_guaranteed"
+                    style="@style/Text.GachaTrack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/touch_min"
+                    android:buttonTint="@color/brand_primary"
+                    android:text="@string/check_guaranteed" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_calculate"
+                    style="@style/Button.GachaTrack"
+                    android:layout_marginTop="@dimen/space_s"
+                    android:text="@string/btn_calculate" />
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    style="@style/Text.GachaTrack.Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/result_placeholder" />
+
+                <TextView
+                    android:id="@+id/tv_result_cost"
+                    style="@style/Text.GachaTrack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs" />
+
+                <TextView
+                    android:id="@+id/tv_worst_case"
+                    style="@style/Text.GachaTrack.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
