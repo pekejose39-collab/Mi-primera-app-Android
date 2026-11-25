@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="result_pulls_left">
+        <item quantity="one">%d pull left to a guaranteed 5★</item>
+        <item quantity="other">%d pulls left to a guaranteed 5★</item>
+    </plurals>
+    <plurals name="games_count">
+        <item quantity="one">%d game included</item>
+        <item quantity="other">%d games included</item>
+    </plurals>
+</resources>

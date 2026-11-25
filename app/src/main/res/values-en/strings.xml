@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English translation: used automatically when the device language is English (RF-08) -->
+<resources>
+    <string name="app_name">Gacha Track</string>
+    <string name="app_tagline">Rates, pity and spending for your gachas at a glance</string>
+    <string name="title_detail">Game info</string>
+
+    <string name="section_spending">Spent this month</string>
+    <string name="spending_amount">€%1$s of €%2$s</string>
+    <string name="spending_hint">You have used %1$d %% of your monthly limit</string>
+    <string name="section_games">Your games</string>
+    <string name="btn_new_session">Log a pull session</string>
+    <string name="toast_coming_soon">Coming in the next version</string>
+    <string name="game_currency_line">Currency: %1$s</string>
+
+    <string name="section_rates">Official rates</string>
+    <string name="label_rate_5">5★ rate</string>
+    <string name="label_rate_4">4★ rate</string>
+    <string name="label_soft_pity">Soft pity from</string>
+    <string name="label_hard_pity">Hard pity (guaranteed 5★)</string>
+    <string name="label_fifty">50/50 system</string>
+    <string name="label_cost">Cost per pull</string>
+    <string name="value_pull_number">pull %1$d</string>
+    <string name="value_cost">%1$d %2$s</string>
+
+    <string name="section_calculator">Pity calculator</string>
+    <string name="hint_current_pity">Current pity (pulls without a 5★)</string>
+    <string name="hint_currency">Currency you have now</string>
+    <string name="check_guaranteed">I lost my last 50/50 (guaranteed)</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="result_placeholder">Enter your pity and tap Calculate</string>
+    <string name="error_pity_range">Enter a value between 0 and %1$d</string>
+    <string name="result_cost">You need %1$d %2$s · %3$d missing</string>
+    <string name="result_cost_ok">You need %1$d %2$s · you already have them!</string>
+    <string name="result_worst_case">Worst case (losing the 50/50): %1$d pulls</string>
+
+    <string name="fifty_value">Yes · guaranteed after a loss</string>
+
+    <string name="game_currency_genshin">Primogems</string>
+    <string name="game_currency_hsr">Stellar Jade</string>
+    <string name="game_currency_wuwa">Astrite</string>
+    <string name="game_currency_zzz">Polychromes</string>
+    <string name="game_desc_genshin">Open-world RPG. Character banner with 90 pity and 50/50.</string>
+    <string name="game_desc_hsr">Turn-based space RPG. Same pity system as Genshin.</string>
+    <string name="game_desc_wuwa">Open-world action. Shorter pity: guaranteed 5★ at 80.</string>
+    <string name="game_desc_zzz">Urban team action. 90 pity on the agent banner.</string>
+
+    <string name="cd_app_logo">Gacha Track logo</string>
+    <string name="cd_game_icon">Game icon</string>
+    <string name="cd_open">Open game info</string>
+    <string name="cd_banner">Illustration of a golden gem among stars</string>
+</resources>
