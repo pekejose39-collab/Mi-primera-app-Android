@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos de la app en español (idioma por defecto). La traducción está en values-en/strings.xml -->
+<resources>
+    <string name="app_name">Gacha Track</string>
+    <string name="app_tagline">Probabilidades, pity y gasto de tus gachas en un vistazo</string>
+    <string name="title_detail">Ficha del juego</string>
+
+    <!-- Pantalla principal -->
+    <string name="section_spending">Gasto de este mes</string>
+    <!-- %1$s = gastado, %2$s = límite -->
+    <string name="spending_amount">%1$s € de %2$s €</string>
+    <string name="spending_hint">Llevas el %1$d %% de tu límite mensual</string>
+    <string name="section_games">Tus juegos</string>
+    <string name="btn_new_session">Registrar sesión de tiradas</string>
+    <string name="toast_coming_soon">Disponible en la próxima versión</string>
+    <!-- %1$s = nombre de la moneda del juego -->
+    <string name="game_currency_line">Moneda: %1$s</string>
+
+    <!-- Ficha del juego -->
+    <string name="section_rates">Probabilidades oficiales</string>
+    <string name="label_rate_5">Probabilidad 5★</string>
+    <string name="label_rate_4">Probabilidad 4★</string>
+    <string name="label_soft_pity">Pity suave desde</string>
+    <string name="label_hard_pity">Pity duro (5★ asegurado)</string>
+    <string name="label_fifty">Sistema 50/50</string>
+    <string name="label_cost">Coste por tirada</string>
+    <!-- %1$d = número de tirada -->
+    <string name="value_pull_number">tirada %1$d</string>
+    <!-- %1$d = cantidad, %2$s = moneda -->
+    <string name="value_cost">%1$d %2$s</string>
+
+    <!-- Calculadora -->
+    <string name="section_calculator">Calculadora de pity</string>
+    <string name="hint_current_pity">Pity actual (tiradas sin 5★)</string>
+    <string name="hint_currency">Moneda que tienes ahora</string>
+    <string name="check_guaranteed">Perdí el último 50/50 (tengo garantía)</string>
+    <string name="btn_calculate">Calcular</string>
+    <string name="result_placeholder">Introduce tu pity y pulsa Calcular</string>
+    <!-- %1$d = pity duro del juego -->
+    <string name="error_pity_range">Introduce un valor entre 0 y %1$d</string>
+    <string name="result_cost">Necesitas %1$d %2$s · te faltan %3$d</string>
+    <string name="result_cost_ok">Necesitas %1$d %2$s · ¡ya los tienes!</string>
+    <string name="result_worst_case">En el peor caso (perder el 50/50) serían %1$d tiradas</string>
+
+    <string name="fifty_value">Sí · garantía tras perder</string>
+    <string name="badge_5star" translatable="false">5★</string>
+    <string name="badge_4star" translatable="false">4★</string>
+    <!-- %1$s = rareza, %2$s = probabilidad -->
+    <string name="badge_rate" translatable="false">%1$s  %2$s</string>
+
+    <!-- Juegos (los nombres propios no se traducen) -->
+    <string name="game_name_genshin" translatable="false">Genshin Impact</string>
+    <string name="game_name_hsr" translatable="false">Honkai: Star Rail</string>
+    <string name="game_name_wuwa" translatable="false">Wuthering Waves</string>
+    <string name="game_name_zzz" translatable="false">Zenless Zone Zero</string>
+    <string name="game_currency_genshin">Protogemas</string>
+    <string name="game_currency_hsr">Jade Estelar</string>
+    <string name="game_currency_wuwa">Astritas</string>
+    <string name="game_currency_zzz">Policromos</string>
+    <string name="game_desc_genshin">RPG de mundo abierto. Banner de personaje con pity a 90 y 50/50.</string>
+    <string name="game_desc_hsr">RPG por turnos espacial. Mismo sistema de pity que Genshin.</string>
+    <string name="game_desc_wuwa">Acción de mundo abierto. Pity más corto: 5★ asegurado a las 80.</string>
+    <string name="game_desc_zzz">Acción urbana por equipos. Pity a 90 en el banner de agentes.</string>
+
+    <!-- Descripciones de imágenes (accesibilidad) -->
+    <string name="cd_app_logo">Logotipo de Gacha Track</string>
+    <string name="cd_game_icon">Icono del juego</string>
+    <string name="cd_open">Abrir ficha</string>
+    <string name="cd_banner">Ilustración de una gema dorada entre estrellas</string>
+</resources>

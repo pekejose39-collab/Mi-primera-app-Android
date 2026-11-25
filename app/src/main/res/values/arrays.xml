@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Datos de los juegos. Todos los arrays van en el MISMO orden:
+    0 = Genshin Impact, 1 = Honkai: Star Rail, 2 = Wuthering Waves, 3 = Zenless Zone Zero
+    Los nombres y monedas apuntan a strings.xml para poder usarlos también en los layouts.
+-->
+<resources>
+    <string-array name="game_names">
+        <item>@string/game_name_genshin</item>
+        <item>@string/game_name_hsr</item>
+        <item>@string/game_name_wuwa</item>
+        <item>@string/game_name_zzz</item>
+    </string-array>
+
+    <string-array name="game_currencies">
+        <item>@string/game_currency_genshin</item>
+        <item>@string/game_currency_hsr</item>
+        <item>@string/game_currency_wuwa</item>
+        <item>@string/game_currency_zzz</item>
+    </string-array>
+
+    <string-array name="game_descriptions">
+        <item>@string/game_desc_genshin</item>
+        <item>@string/game_desc_hsr</item>
+        <item>@string/game_desc_wuwa</item>
+        <item>@string/game_desc_zzz</item>
+    </string-array>
+
+    <string-array name="game_rate_5" translatable="false">
+        <item>0,6 %</item>
+        <item>0,6 %</item>
+        <item>0,8 %</item>
+        <item>0,6 %</item>
+    </string-array>
+
+    <string-array name="game_rate_4" translatable="false">
+        <item>5,1 %</item>
+        <item>5,1 %</item>
+        <item>6,0 %</item>
+        <item>9,4 %</item>
+    </string-array>
+
+    <integer-array name="game_soft_pity">
+        <item>74</item>
+        <item>74</item>
+        <item>66</item>
+        <item>74</item>
+    </integer-array>
+
+    <integer-array name="game_hard_pity">
+        <item>90</item>
+        <item>90</item>
+        <item>80</item>
+        <item>90</item>
+    </integer-array>
+
+    <!-- Colores de cada juego (referencias a colors.xml) -->
+    <array name="game_colors">
+        <item>@color/game_genshin</item>
+        <item>@color/game_hsr</item>
+        <item>@color/game_wuwa</item>
+        <item>@color/game_zzz</item>
+    </array>
+</resources>

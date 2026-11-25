@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plurales: Android elige "one" u "other" según la cantidad -->
+<resources>
+    <plurals name="result_pulls_left">
+        <item quantity="one">Te falta %d tirada para el 5★ asegurado</item>
+        <item quantity="other">Te faltan %d tiradas para el 5★ asegurado</item>
+    </plurals>
+    <plurals name="games_count">
+        <item quantity="one">%d juego incluido</item>
+        <item quantity="other">%d juegos incluidos</item>
+    </plurals>
+</resources>
