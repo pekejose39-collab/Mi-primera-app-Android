@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Selector: el botón cambia de aspecto según su estado.
+    Android recorre los <item> en orden y usa el primero que cumpla.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Desactivado -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/disabled" />
+            <corners android:radius="@dimen/button_radius" />
+        </shape>
+    </item>
+    <!-- Pulsado -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/brand_primary_pressed" />
+            <corners android:radius="@dimen/button_radius" />
+        </shape>
+    </item>
+    <!-- Normal -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/brand_primary" />
+            <corners android:radius="@dimen/button_radius" />
+        </shape>
+    </item>
+</selector>
