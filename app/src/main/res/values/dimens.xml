@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tamaños para móvil. En tablet se sobrescriben con values-sw600dp/dimens.xml -->
+<resources>
+    <!-- Espaciados (múltiplos de 4 dp) -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">16dp</dimen>
+    <dimen name="space_l">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="dim_zero">0dp</dimen>
+
+    <!-- Textos (siempre en sp para respetar el tamaño de letra del usuario) -->
+    <dimen name="text_title">26sp</dimen>
+    <dimen name="text_heading">18sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_caption">14sp</dimen>
+    <dimen name="text_result">17sp</dimen>
+
+    <!-- Componentes -->
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_stroke_width">1dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="button_radius">26dp</dimen>
+    <dimen name="touch_min">48dp</dimen>
+    <dimen name="input_radius">12dp</dimen>
+    <dimen name="icon_game">48dp</dimen>
+    <dimen name="icon_game_padding">10dp</dimen>
+    <dimen name="icon_small">24dp</dimen>
+    <dimen name="icon_logo">56dp</dimen>
+    <dimen name="header_padding_top">32dp</dimen>
+    <dimen name="header_corner">28dp</dimen>
+    <dimen name="progress_height">10dp</dimen>
+    <dimen name="badge_padding_h">10dp</dimen>
+    <dimen name="badge_padding_v">4dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="banner_height">120dp</dimen>
+</resources>

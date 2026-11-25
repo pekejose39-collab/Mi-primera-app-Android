@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Estilos reutilizables. Agrupan atributos que se repiten en los layouts
+    (tamaño, color, márgenes) para no escribirlos una y otra vez.
+-->
+<resources>
+
+    <!-- ===== Textos ===== -->
+    <style name="Text.GachaTrack" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+
+    <style name="Text.GachaTrack.Title">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_on_brand</item>
+    </style>
+
+    <style name="Text.GachaTrack.Tagline">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/text_on_brand</item>
+        <item name="android:alpha">0.85</item>
+    </style>
+
+    <style name="Text.GachaTrack.Heading">
+        <item name="android:textSize">@dimen/text_heading</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/space_l</item>
+        <item name="android:layout_marginBottom">@dimen/space_s</item>
+    </style>
+
+    <style name="Text.GachaTrack.Caption">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Fila "etiqueta : valor" de la tabla de probabilidades -->
+    <style name="Text.GachaTrack.RowLabel">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:paddingTop">@dimen/space_s</item>
+        <item name="android:paddingBottom">@dimen/space_s</item>
+    </style>
+
+    <style name="Text.GachaTrack.RowValue">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingTop">@dimen/space_s</item>
+        <item name="android:paddingBottom">@dimen/space_s</item>
+    </style>
+
+    <style name="Text.GachaTrack.Result">
+        <item name="android:textSize">@dimen/text_result</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/space_m</item>
+    </style>
+
+    <!-- ===== Tarjetas ===== -->
+    <style name="Card.GachaTrack" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">@dimen/card_padding</item>
+        <item name="android:elevation">@dimen/card_elevation</item>
+        <item name="android:layout_marginBottom">@dimen/space_m</item>
+    </style>
+
+    <!-- Tarjeta pulsable de un juego en la lista -->
+    <style name="Card.GachaTrack.Game">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:minHeight">@dimen/touch_min</item>
+    </style>
+
+    <!-- Icono circular de color de cada juego -->
+    <style name="Icon.GachaTrack.Game" parent="">
+        <item name="android:layout_width">@dimen/icon_game</item>
+        <item name="android:layout_height">@dimen/icon_game</item>
+        <item name="android:padding">@dimen/icon_game_padding</item>
+        <item name="android:background">@drawable/bg_game_icon</item>
+        <item name="android:src">@drawable/ic_star</item>
+        <item name="android:contentDescription">@string/cd_game_icon</item>
+        <item name="android:layout_marginEnd">@dimen/space_m</item>
+    </style>
+
+    <!-- ===== Botones ===== -->
+    <style name="Button.GachaTrack" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textColor">@color/text_on_brand</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- ===== Campos de texto ===== -->
+    <style name="Input.GachaTrack" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/touch_min</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">@dimen/space_m</item>
+        <item name="android:paddingEnd">@dimen/space_m</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_marginBottom">@dimen/space_s</item>
+    </style>
+
+    <!-- Insignia "5★" dorada -->
+    <style name="Badge.GachaTrack" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/badge_padding_h</item>
+        <item name="android:paddingEnd">@dimen/badge_padding_h</item>
+        <item name="android:paddingTop">@dimen/badge_padding_v</item>
+        <item name="android:paddingBottom">@dimen/badge_padding_v</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/badge_text</item>
+        <item name="android:layout_marginEnd">@dimen/space_s</item>
+    </style>
+</resources>

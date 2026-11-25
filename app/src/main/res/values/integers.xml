@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Coste de una tirada en moneda del juego (igual en los 4 juegos) -->
+    <integer name="pull_cost">160</integer>
+    <!-- Longitud máxima de los campos numéricos -->
+    <integer name="max_len_pity">2</integer>
+    <integer name="max_len_currency">6</integer>
+    <!-- Datos de ejemplo del gasto mensual (pantalla de interfaz) -->
+    <integer name="demo_spent_cents">3297</integer>
+    <integer name="demo_limit_cents">5000</integer>
+    <integer name="progress_max">100</integer>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tablets (ancho mínimo 600 dp): márgenes y textos más grandes -->
+<resources>
+    <dimen name="screen_padding">32dp</dimen>
+    <dimen name="text_title">34sp</dimen>
+    <dimen name="text_heading">22sp</dimen>
+    <dimen name="text_body">18sp</dimen>
+    <dimen name="text_caption">16sp</dimen>
+    <dimen name="text_result">20sp</dimen>
+    <dimen name="card_padding">24dp</dimen>
+    <dimen name="icon_game">64dp</dimen>
+    <dimen name="icon_game_padding">14dp</dimen>
+    <dimen name="icon_logo">72dp</dimen>
+    <dimen name="header_padding_top">48dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modo oscuro: Android usa estos valores cuando el sistema está en tema oscuro -->
+<resources>
+    <color name="brand_primary">#9C86FF</color>
+    <color name="brand_primary_dark">#2A1C6E</color>
+    <color name="brand_primary_pressed">#8470F0</color>
+
+    <color name="bg_screen">#14121C</color>
+    <color name="bg_card">#1F1C2B</color>
+    <color name="card_stroke">#34304A</color>
+    <color name="input_bg">#2A2638</color>
+
+    <color name="text_primary">#EDEAF7</color>
+    <color name="text_secondary">#A9A4BF</color>
+    <color name="text_error">#FF7A84</color>
+    <color name="text_success">#6FD39B</color>
+
+    <color name="disabled">#4A4660</color>
+    <color name="progress_track">#34304A</color>
+
+    <color name="header_start">#3A2496</color>
+    <color name="header_end">#6B2FA3</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paleta en modo claro. Los mismos nombres se redefinen en values-night/colors.xml -->
+<resources>
+    <!-- Marca: violeta "deseo" y dorado "5 estrellas" -->
+    <color name="brand_primary">#5B3FD9</color>
+    <color name="brand_primary_dark">#3A2496</color>
+    <color name="brand_primary_pressed">#4A31B8</color>
+    <color name="brand_gold">#E8B53C</color>
+    <color name="brand_gold_dark">#B98618</color>
+    <color name="badge_text">#1D1A2B</color>
+    <color name="brand_purple_4star">#A66BE0</color>
+
+    <!-- Fondos y superficies -->
+    <color name="bg_screen">#F5F3FB</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="card_stroke">#E2DDF2</color>
+    <color name="input_bg">#F0EDF8</color>
+
+    <!-- Texto -->
+    <color name="text_primary">#1D1A2B</color>
+    <color name="text_secondary">#625E75</color>
+    <color name="text_on_brand">#FFFFFF</color>
+    <color name="text_error">#C62F3A</color>
+    <color name="text_success">#2E8B57</color>
+
+    <!-- Estados -->
+    <color name="disabled">#C9C5D6</color>
+    <color name="progress_track">#E2DDF2</color>
+
+    <!-- Color de cada juego -->
+    <color name="game_genshin">#3E8ED0</color>
+    <color name="game_hsr">#7A5CCB</color>
+    <color name="game_wuwa">#2BA79A</color>
+    <color name="game_zzz">#E0702E</color>
+
+    <!-- Degradado de la cabecera -->
+    <color name="header_start">#5B3FD9</color>
+    <color name="header_end">#9C4FD6</color>
+
+    <!-- Icono de la app -->
+    <color name="ic_launcher_background">#3A2496</color>
+</resources>
