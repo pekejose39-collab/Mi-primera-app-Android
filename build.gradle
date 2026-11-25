@@ -1,0 +1,4 @@
+// Fichero Gradle del PROYECTO: solo declara los plugins que usan los módulos.
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}
